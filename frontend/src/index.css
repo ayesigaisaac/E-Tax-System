@@ -1,0 +1,48 @@
+:root{
+  /* Color palette */
+  --brand-primary: #0b5ed7; /* deep blue */
+  --brand-accent: #0dcaf0; /* cyan */
+  --muted: #6c757d;
+  --bg: #f6f8fb;
+  --card-bg: #ffffff;
+  --success: #198754;
+  --danger: #dc3545;
+
+  /* Typography */
+  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --heading-weight: 600;
+}
+
+/* Global reset and layout */
+html,body,#root{height:100%;}
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background-color: var(--bg);
+  color: #222;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+.container{padding-top:24px;padding-bottom:24px}
+
+/* Page header */
+.page-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px}
+.page-title{margin:0;font-weight:var(--heading-weight);font-size:1.5rem}
+.page-subtitle{color:var(--muted);font-size:.95rem}
+
+/* Stat card */
+.stat-card{border-radius:8px;background:var(--card-bg);box-shadow:0 6px 18px rgba(22,28,45,0.06);padding:18px}
+.stat-card .stat-value{font-size:1.4rem;font-weight:700}
+.stat-card .stat-label{color:var(--muted);font-size:.9rem}
+
+/* Footer */
+.app-footer{padding:20px 0;color:var(--muted);text-align:center;font-size:.9rem}
+
+/* Small utilities */
+.muted{color:var(--muted)}
+.card-rounded{border-radius:10px}
+
+@media (max-width:576px){
+  .page-header{flex-direction:column;align-items:flex-start}
+}
