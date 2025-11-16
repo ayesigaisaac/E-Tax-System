@@ -34,7 +34,7 @@ const LoginPage = () => {
               required
             />
           </div>
-          <div className="mb-3">
+          <div className="mb-3"> 
             <label htmlFor="password" className="form-label">Password</label>
             <input
               type="password"
